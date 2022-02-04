@@ -33,6 +33,13 @@ jobs:
       # This sample integration test will run as long as the greet command exists. Once you remove the greet command you should remove this line.
       # Push new changes first, before adding new tests to your config.
       - orb-test/greet
+  
+  integration-test-py:
+    docker:
+      - image: cimg/python:3.10.2
+    steps:
+      - checkout
+      - orb-test/pygreet
 
 workflows:
   # Prior to producing a development orb (which requires credentials) basic validation, linting, and even unit testing can be performed.

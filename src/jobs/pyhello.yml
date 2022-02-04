@@ -1,0 +1,7 @@
+description: >
+  Run hello.py
+
+executor: cimg/python
+
+steps:
+  - pygreet
