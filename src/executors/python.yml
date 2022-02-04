@@ -1,0 +1,4 @@
+description: >
+  This is a python executor using Docker.
+docker:
+  - image: 'cimg/python:3.10.2'
