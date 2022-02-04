@@ -6,4 +6,4 @@ description: >
 steps:
   - run:
       name: Python Greeting
-      command: <<include(scripts/pyhello.py)>>
+      command: <<include(scripts/hello.py)>>
