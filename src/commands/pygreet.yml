@@ -6,4 +6,5 @@ description: >
 steps:
   - run:
       name: Python Greeting
-      command: <<include(python3 scripts/hello.py)>>
+      shell: /usr/bin/env python3
+      command: <<include(scripts/hello.py)>>
